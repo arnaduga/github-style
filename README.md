@@ -137,6 +137,7 @@ pygmentsUseClasses = true
   lastmod = true
   userStatusEmoji = "😀"
   favicon = "/images/github.png"
+  headerIcon = "/images/GitHub-Mark-Light-32px.png"
   location = "China"
 
   [[params.links]]
