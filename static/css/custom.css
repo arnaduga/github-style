@@ -1,4 +1,5 @@
-.container-lg {
+.container-lg,
+.container-xl {
   max-width: 1800px !important;
 }
 
