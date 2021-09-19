@@ -168,6 +168,24 @@
           </a>
           {{ end }}
         </div>
+
+
+        <div class="border-top color-border-secondary pt-3 mt-3 clearfix hide-sm hide-md">
+          <h2 class="mb-2 h4">Tags</h2>
+          {{ range .Site.Taxonomies.tags }}
+            <a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a> // 
+          {{ end }}
+        </div>
+
+        <!--
+        <div class="border-top color-border-secondary pt-3 mt-3 clearfix hide-sm hide-md">
+          <h2 class="mb-2 h4">Categories</h2>
+          {{ range .Site.Taxonomies.categories }}
+            <a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a> // 
+          {{ end }}
+        </div>
+        -->
+
       </div>
     </div>
 
