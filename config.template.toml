@@ -25,6 +25,8 @@ pygmentsUseClasses = true
   location = "China"
   userStatusEmoji = "😀"
 
+  displayTagsList = true
+
   [[params.links]]
     title = "Link"
     href = "https://github.com/meik2333"
@@ -32,6 +34,7 @@ pygmentsUseClasses = true
     title = "Link2"
     href = "https://meik2333.com"
     icon = "https://meik2333.com/images/avatar.png"
+
 
   [[params.options]]
     displayReadingTime = true

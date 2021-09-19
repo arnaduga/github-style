@@ -153,6 +153,9 @@ pygmentsUseClasses = true
   headerIcon = "/images/GitHub-Mark-Light-32px.png"
   location = "China"
 
+  displayTagsList = true
+
+
   [[params.links]]
     title = "Link"
     href = "https://github.com/meik2333"
