@@ -33,5 +33,10 @@ pygmentsUseClasses = true
     href = "https://meik2333.com"
     icon = "https://meik2333.com/images/avatar.png"
 
+  [[params.options]]
+    displayReadingTime = true
+    displayLanguageSwith = true
+    displayNightCat = false
+
 [frontmatter]
   lastmod = ["lastmod", ":fileModTime", ":default"]
