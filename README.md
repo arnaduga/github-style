@@ -1,3 +1,16 @@
+> **NOTE**
+> 
+> This fork of MeiK2333/github-style Hugo Theme split from original...
+> 
+> I needed to make some improvements or changes that may not be accepted in original (like basic language switch, not following Hugo i18n principles)
+> 
+> In addition to that, original repo did not merge last PR, neither refuse it. Maybe not active, and I needed this PR (I reproduced it)
+> 
+> As a consequence, I started my own version.
+> 
+> I'll try to make it as clean as possible, and as customizable as possible (not hardcoded). But I cannot guarantee that :-/
+
+
 # github-style
 
 ## Init hugo site
@@ -147,6 +160,11 @@ pygmentsUseClasses = true
     title = "Link2"
     href = "https://meik2333.com"
     icon = "https://meik2333.com/images/avatar.png"
+
+  [[params.options]]
+    displayReadingTime = true
+    displayLanguageSwith = true
+    displayNightCat = false
 
 [frontmatter]
   lastmod = ["lastmod", ":fileModTime", ":default"]
