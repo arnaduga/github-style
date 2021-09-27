@@ -41,5 +41,11 @@ pygmentsUseClasses = true
     displayLanguageSwith = true
     displayNightCat = false
 
+  [[params.translation]]
+    language1suffix = ""
+    language1code = "🇬🇧"
+    language2suffix = ".fr"
+    language2code = "🇫🇷"
+
 [frontmatter]
   lastmod = ["lastmod", ":fileModTime", ":default"]

@@ -23,7 +23,7 @@ cd mysite
 ## Install the theme
 
 ```bash
-git submodule add git@github.com:MeiK2333/github-style.git themes/github-style
+git submodule add git@github.com:arnaduga/github-style.git themes/github-style
 ```
 
 ## Update the theme
@@ -56,6 +56,86 @@ echo '`Hello World!`' > content/readme.md
 pin: true
 ---
 ```
+
+## Basic translation
+
+This theme allows an unconventional dual-language feature. Basically, you will be able to switch from a post from one language to another one. Only 2 languages.
+
+To do so, in the `config.toml` file you have to add 4 parameters:
+```
+  [[params.translation]]
+    language1suffix = ""
+    language1code = "🇬🇧"
+    language2suffix = ".fr"
+    language2code = "🇫🇷"
+```
+Where:
+- `language1suffix` is the post file suffix of the first language (in my case, NONE)
+- `language1code` is the string to be displayed on post page for the first language(`EN` for instance)
+- `language2suffix` is the post file suffix of the second language (in my case, `.fr`)
+- `language2code` is the string to be displayed on post page fort the second language (`FR` for instance)
+
+Then, in you post content folder, you should have one file by language, following the suffixed declared:
+ - `my-wonderful-post.md` for the English version
+ - `mon-fantastique-article.fr.md` for its translated French version
+
+At least, to enable the switch language link, you have to add the translated page name in a `translation` post attribute:
+
+In the `my-wonderful-post.md`
+```
+---
+translation: "mon-fantastique-article.fr.md"
+---
+```
+
+... and in the `mon-fantastique-article.fr.md`
+```
+---
+translation: "my-wonderful-post.md"
+---
+```
+
+
+## MermaidJS shortcode
+
+You can also add MermaidJS capability to your post.
+
+First, add in the post header:
+```
+---
+mermaid: true
+---
+```
+
+(This will load the MermaidJS library _only_ when required, to optimize other pages)
+
+
+Then, in your post body, you can write some MermaidJS code:
+```
+{{<mermaid>}}
+graph TD
+    A[Christmas] -->|Get money| B(Go shopping)
+    B --> C{Let me think}
+    C -->|One| D[Laptop]
+    C -->|Two| E[iPhone]
+    C -->|Three| F[fa:fa-car Car]
+{{</mermaid>}}
+```
+
+... and use theming if needed:
+
+```
+{{<mermaid>}}
+%%{init: {'theme': 'neutral', "flowchart" : { "curve" : "basis" } } }%%
+graph TD
+    A[Christmas] -->|Get money| B(Go shopping)
+    B --> C{Let me think}
+    C -->|One| D[Laptop]
+    C -->|Two| E[iPhone]
+    C -->|Three| F[fa:fa-car Car]
+{{</mermaid>}}
+```
+
 
 ## Add new post
 

@@ -62,7 +62,17 @@
                   <div class="file-actions flex-order-2 pt-0">
                     {{ if .Site.Params.options.displayLanguageSwitch }} 
                     {{ if .Params.translation }}
-                    <a href="/post/{{ .Params.translation }}"><img src="/images/translate.svg" width="16"> Language switch</a>
+
+
+                    <a class="muted-link mr-3" href="/post/{{ .Params.translation }}">
+                      <!-- If the translation parma mentioned the language 2 suffix, then lang1 to lang2. Othewise, lang2 to lang1 -->
+                      {{ if eq (substr .Params.translation (mul -1 (len .Site.Params.translation.language2suffix))) .Site.Params.translation.language2suffix }}
+                        {{ .Site.Params.translation.language1code }}<svg class="octicon octicon-arrow-right" width="16" height="16" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.22 2.97a.75.75 0 011.06 0l4.25 4.25a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06-1.06l2.97-2.97H3.75a.75.75 0 010-1.5h7.44L8.22 4.03a.75.75 0 010-1.06z"/></svg>{{ .Site.Params.translation.language2code }}
+                      {{ else }}
+                        {{ .Site.Params.translation.language2code }}<svg class="octicon octicon-arrow-right" width="16" height="16" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.22 2.97a.75.75 0 011.06 0l4.25 4.25a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06-1.06l2.97-2.97H3.75a.75.75 0 010-1.5h7.44L8.22 4.03a.75.75 0 010-1.06z"/></svg>{{ .Site.Params.translation.language1code }}
+                      {{ end }}
+
+                    </a>
                     <span class="file-info-divider"></span>
                     {{ end }} 
                     {{ end }}
