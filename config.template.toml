@@ -1,6 +1,6 @@
-baseURL = "https://meik2333.com/"
+baseURL = "https://arnaduga.dev/"
 languageCode = "zh-cn"
-title = "MeiK's blog"
+title = "Arnaduga's website"
 theme = "github-style"
 googleAnalytics = "UA-123456-789"
 pygmentsCodeFences = true
@@ -29,16 +29,16 @@ pygmentsUseClasses = true
 
   [[params.links]]
     title = "Link"
-    href = "https://github.com/meik2333"
+    href = "https://github.com/arnaduga"
   [[params.links]]
     title = "Link2"
-    href = "https://meik2333.com"
-    icon = "https://meik2333.com/images/avatar.png"
+    href = "https://arnaduga.dev"
+    icon = "https://arnaduga.dev/images/avatar.png"
 
 
   [[params.options]]
-    displayReadingTime = true
-    displayLanguageSwith = true
+    displayReadingTime = false
+    displayLanguageSwitch = true
     displayNightCat = false
 
   [[params.translation]]

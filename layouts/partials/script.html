@@ -1,6 +1,6 @@
 <script type="application/javascript" src="{{ "js/github-style.js" | absURL }}"></script>
 
-{{ if .Params.mermaid }}
+{{ if or .Params.mermaid .Site.Params.mermaid }}
   <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
 {{ end }}
 
