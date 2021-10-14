@@ -2,11 +2,14 @@ baseURL = "https://arnaduga.dev/"
 languageCode = "zh-cn"
 title = "Arnaduga's website"
 theme = "github-style"
+
 googleAnalytics = "UA-123456-789"
+
 pygmentsCodeFences = true
 pygmentsUseClasses = true
 
 [params]
+  goatCounter = "accountName"
   author = "MeiK"
   description = "In solitude, where we are least alone."
   github = "MeiK2333"
