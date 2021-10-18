@@ -5,4 +5,7 @@ author = ""
 keywords = ["", ""]
 cover = ""
 summary = ""
+pin = false
+tags = ["", ""]
+translation = ""
 +++
